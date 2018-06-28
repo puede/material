@@ -10,14 +10,82 @@
         padding-left: 10px
         padding-right: 10px
 .banner
+    background: url("../img-merge/banner.jpg")
+    height: 194px
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    -webkit-transform: translateX(-50%)
+    margin: 0 auto
+    display: block
+.contact
+    display: none
+    @media (min-width: 1000px)
+        display: block
+    float: right
+    width: 325px
+    height: 194px
+    background: rgba(0,0,0,0.1)
+    color: #ffffff
+    padding-left: 30px
+    padding-top: 30px
+    a
+        color: #ffffff
+    .tel
+        font-size: 26px
+        font-weight: bold
+        padding-top: 20px
+    .online
+        margin-top: 30px
+        background: #ff453e
+        width: 157px
+        padding-top: 6px
+        padding-bottom: 6px
+        text-align: center
+        border-radius: 7px
+.banner
     img
-        width: 100%
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+    .banner-wenzi
+        h1
+            color: #ffffff
+            padding-top: 16px
+            font-size: 20px
+            @media (min-width: 500px)
+                font-size: 24px
+            @media (min-width: 760px)
+                padding-top: 12px
+                font-size: 32px
+            @media (min-width: 1000px) and (max-width: 1199px)
+                font-size: 28px
+            span
+                color: #f3f953
+        .locat
+            // display: none
+            // @media (min-width: 760px)
+            //     display: block
+            color: #ffffff
+            padding-top: 16px
+            font-size: 14px
+            a
+                color: #ffffff
+                &:hover
+                    color: #ffffff
+        .america
+            color: #ffffff
+            padding-top: 20px
+            font-size: 16px
+            @media (min-width: 520px)
+                padding-top: 12px
+            @media (min-width: 760px)
+                font-size: 16px
+                letter-spacing: 6px
 .material-b
     background: #004286
     color: #fff
     line-height: 40px
-    // z-index: 100
-    // width: 100%
     @media (max-width: 1199px)
         line-height: 24px
         padding-top: 10px
@@ -39,9 +107,9 @@
     .material-c-1
         padding-bottom: 10px
         @media (min-width: 1000px)
-            text-align: right
+            text-align: left
             padding-bottom: 0
-            border-right: 1px solid #dddddd
+            // border-right: 1px solid #dddddd
         
         .daodu
             font-size: 40px
